@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "start": "webpack-dev-server --progress --colors",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "NODE_PATH=./ mocha -c -S --recursive --compilers js:babel-core/register --require ignore-styles --require src/**/*.spec.js"
+  },
+  "author": "Wagner Leonardi <leonardiwagner@gmail.com>",
+  "devDependencies": {
+    "@storybook/react": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-polyfill": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-1": "*",
+    "bem-classname": "*",
+    "css-loader": "*",
+    "file-loader": "*",
+    "html-webpack-plugin": "*",
+    "less": "*",
+    "less-loader": "*",
+    "react": "*",
+    "react-dom": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}
